@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>jquery实现添加自定义标签代码</title>
+<!--	<script src="bootstrap/js/jquery.js"></script>-->
+	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+	<script src="bootstrap/js/bootstrap-tab.js"></script>
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<link href="css/tab.css" type="text/css" rel="stylesheet" />
+	<script src="js/bootstrap-typeahead.js"></script>
+	<script src="js/demo.js"></script>
+	<script src="js/mockjax.js"></script>
+	<script src="js/prettify.js"></script>
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/prettify.css">
+<style type="text/css">
+	.nav-tabs{border-bottom:none}
+	.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+		background-color:transparent;
+		border:none}
+	.nav-tabs>li>a, .nav-tabs>li>a:focus, .nav-tabs>li>a:hover{
+		background-color:transparent;
+		border:none}
+	.nav-tabs>li.active>a>span{
+		background: #fde3e4;
+		color: #c03a3a;
+		padding: 5px;
+		border-radius: 25px;
+		font-weight: 600;
+	}
+	ul li{list-style-type:none}
+</style>
+
+</head>
+<body style=" background-color: #efeff4">
+<div class="demo" style="margin-top:40px;">
+	<div class="plus-tag tagbtn clearfix" id="myTags"> <span class="label" style=" font-size: 16px;"></span></div>
+	<div class="plus-tag-input">
+		<input id="demo1" type="text" class="form-control" placeholder="Search cities..." autocomplete="off" />
+	</div><!--plus-tag-add end-->
+	<div id="selection_box_body">
+		<div class="row">
+			<div class="span4">
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#recommend" data-toggle="tab"><span>推荐</span></a></li>
+						<li class=""><a href="#2" data-toggle="tab"><span>客户</span></a></li>
+						<li class=""><a href="#3" data-toggle="tab"><span>技术</span></a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="recommend">
+							<div id="mycard-plus">
+								<div class="default-tag tagbtn">
+									<div class="clearfix">
+										<a value="-1" title="电信" href="javascript:void(0);"><span>电信(666)</span><em></em></a>
+										<a value="-1" title="Java" href="javascript:void(0);"><span>Java(199)</span><em></em></a>
+										<a value="-1" title="集客" href="javascript:void(0);"><span>集客(55)</span><em></em></a>
+									</div>
+								</div>
+							</div><!--mycard-plus end-->
+						</div>
+						<div class="tab-pane" id="2">
+							<div id="mycard-plus">
+								<div class="default-tag tagbtn">
+									<div class="clearfix">
+										<a value="-1" title="电信" href="javascript:void(0);"><span>电信(666)</span><em></em></a>
+										<a value="-1" title="集客" href="javascript:void(0);"><span>集客(55)</span><em></em></a>
+										<a value="-1" title="中科院" href="javascript:void(0);"><span>中科院(10)</span><em></em></a>
+									</div>
+								</div>
+							</div><!--mycard-plus end-->
+						</div>
+						<div class="tab-pane" id="3">
+							<div id="mycard-plus">
+								<div class="default-tag tagbtn">
+									<div class="clearfix">
+										<a value="-1" title="Java" href="javascript:void(0);"><span>Java(199)</span><em></em></a>
+										<a value="-1" title="Python" href="javascript:void(0);"><span>Python(99)</span><em></em></a>
+										<a value="-1" title="区块链" href="javascript:void(0);"><span>区块链(34)</span><em></em></a>
+									</div>
+								</div>
+							</div><!--mycard-plus end-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		
+</div>
+<script type="text/javascript" src="js/tab.js"></script>
+</body>
+</html>
